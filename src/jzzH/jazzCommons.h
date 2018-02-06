@@ -320,7 +320,7 @@ struct persistedKey {char key[MAX_KEY_LENGTH];};
 struct jazz_node
 {
 	char  alias		 [MAX_ALIAS_NAMELENGTH];	///< Name used internally, also for reporting.
-	char  host_or_ip [MAX_HOST_NAMELENGTH];		///< Host or IP. Must work after http://
+	char  host_or_ip [MAX_HOST_NAMELENGTH];		///< Host or IP. Must be a valid hostname.
 	int	  min_role;								///< What the node must be able to do. (Flag combination in [ROLE_PERSISTENCE..ROLE_FOREMAN])
 	int	  max_role;								///< What the node could do. (Flag combination in [ROLE_PERSISTENCE..ROLE_FOREMAN])
 	int	  port;									///< Http port
